@@ -1,0 +1,19 @@
+<html>
+<body>
+<div id="tp">
+  <div id="data">
+  </div>
+</div>
+
+<script>
+ function processForm()
+  { 
+    var parameters = location.search.substring(1).split("&");
+    var temp = parameters[0].split("=");
+    l = unscape(temp[1]);
+    document.getElementById("data").innerHTML = l;
+  }
+ processForm();
+</script>
+</body>
+</html>
