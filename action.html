@@ -2,12 +2,13 @@
 <body>
 <div id="tp">
   <div id="data">
+    <p></p>
   </div>
 </div>
 
 <script>
  function processForm()
-  { 
+  {
     var parameters = location.search.substring(1).split("&");
     var temp = parameters[0].split("=");
     l = unscape(temp[1]);
